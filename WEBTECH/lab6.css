@@ -1,0 +1,98 @@
+/* style_lab6.css */
+
+/* --- ЗАГАЛЬНІ ТА НАВІГАЦІЯ --- */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0; padding: 0; padding-top: 70px;
+    background-color: #fdfbf7; /* Трохи інший відтінок фону */
+}
+nav {
+    position: fixed; top: 0; width: 100%;
+    background-color: #2c3e50;
+    z-index: 1000;
+}
+nav ul {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; justify-content: center;
+}
+nav ul li a {
+    display: block; color: white; padding: 14px 25px;
+    text-decoration: none; font-weight: bold;
+    transition: background 0.3s;
+}
+nav ul li a:hover { background-color: #e74c3c; }
+
+.container {
+    max-width: 800px; margin: 20px auto; padding: 40px;
+    background: white; border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* --- СТИЛІ ФОРМИ (ЛР6) --- */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form input:focus, form select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+form button {
+    width: 100%;
+    background-color: #27ae60;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #219150;
+}
+
+/* Повідомлення про успіх */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Теорія */
+.theory-block {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px dashed #eee;
+}
+.theory-block ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
